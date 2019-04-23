@@ -6,7 +6,9 @@ class Tables extends CI_Controller {
   public  function __construct(){
     parent::__construct();    
     $this->load->model('m_barang');
-                $this->load->helper('url');
+    $this->load->helper('url');
+    // load class form validation
+    $this->load->library("form validation");
   }
 
   public function index()
@@ -50,7 +52,21 @@ class Tables extends CI_Controller {
 
   function edit()
   {
-      
+    $kdbarang = $this->input->post('kdbarang');
+    $nama = $this->input->post('nama');
+    $deskripsi = $this->input->post('deskripsi');
+    $stokbarang = $this->input->post('stokbarang');
+    $hargabarang = $this->input->post('hargabarang');
+
+    $data = array(
+      'kdbarang' => $kdbarang,
+      'nama' => $nama,
+      'deskripsi' => $deskripsi,
+      'stokbarang' => $stokbarang,
+      'hargabarang' => $hargabarang
+      );
+      $this->m_barang->edit_barang($data,'barang');
+    redirect('admin/tables');
   }
 
   public function header()
