@@ -218,8 +218,13 @@
         <!-- DataTables Example -->
         <div class="card mb-3">
           <div class="card-header">
+          <div class="form-group">
+        <div class="form-row">
+        <div class="col-md-10">
             <i class="fas fa-table"></i>
-            Data Table Example</div>
+            Daftar Barang</div>
+            <div class="col-md-2">
+            <a class="btn-primary" href="<?php echo base_url('index.php/admin/barang/crud');?>">Tambah</a>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

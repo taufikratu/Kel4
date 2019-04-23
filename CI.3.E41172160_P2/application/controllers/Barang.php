@@ -10,6 +10,11 @@ class Barang extends CI_Controller{
         $this->load->view("v_barang",$data);
     }
 
+
+    function index(){
+        
+    }
+
 function edit(){
     echo"Edit";
 }
