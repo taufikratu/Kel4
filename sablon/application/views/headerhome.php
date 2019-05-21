@@ -8,7 +8,7 @@
 	
 	<title>Khaira Sablon</title>
 
-	<link rel="shortcut icon" href=<?php echo base_url ("assets/images/polije.png");?>>
+	<link rel="shortcut icon" href=<?php echo base_url ("assets/images/sasa.png");?>>
 	
 	<!-- Bootstrap -->
 	<link href=<?php echo base_url ("assets/css/bootstrap.no-icons.min.css"); ?> rel="stylesheet">
@@ -26,7 +26,7 @@
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src=<?php echo base_url ("assets/images/2.png");?> alt="">
+			<img class="img-circle" src=<?php echo base_url ("assets/images/logo.png");?> alt="">
 			<span class="title">Khaira Sablon</span>
 		</h1>
 	</div>

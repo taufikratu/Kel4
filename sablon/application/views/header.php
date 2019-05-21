@@ -8,7 +8,7 @@
 	
 	<title>Khaira Sablon</title>
 
-	<link rel="shortcut icon" href=<?php echo base_url ("assets/images/polije.png");?>>
+	<link rel="shortcut icon" href=<?php echo base_url ("assets/images/sasa.png");?>>
 	
 	<!-- Bootstrap -->
 	<link href=<?php echo base_url ("assets/css/bootstrap.no-icons.min.css"); ?> rel="stylesheet">
