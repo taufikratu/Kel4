@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Bulan Mei 2019 pada 06.04
+-- Waktu pembuatan: 21 Bulan Mei 2019 pada 07.17
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -78,6 +78,19 @@ CREATE TABLE `design` (
   `gambardesign` varchar(200) NOT NULL,
   `hargadesign` int(20) NOT NULL,
   `ukurandesign` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `desin`
+--
+
+CREATE TABLE `desin` (
+  `iddesign` int(5) NOT NULL,
+  `gambardesign` varchar(50) DEFAULT NULL,
+  `hargadesign` int(10) DEFAULT NULL,
+  `ukurandesign` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -185,6 +198,12 @@ ALTER TABLE `design`
   ADD PRIMARY KEY (`iddesign`);
 
 --
+-- Indeks untuk tabel `desin`
+--
+ALTER TABLE `desin`
+  ADD PRIMARY KEY (`iddesign`);
+
+--
 -- Indeks untuk tabel `detailpesan`
 --
 ALTER TABLE `detailpesan`
@@ -223,6 +242,12 @@ ALTER TABLE `customproduk`
 -- AUTO_INCREMENT untuk tabel `design`
 --
 ALTER TABLE `design`
+  MODIFY `iddesign` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `desin`
+--
+ALTER TABLE `desin`
   MODIFY `iddesign` int(5) NOT NULL AUTO_INCREMENT;
 
 --
