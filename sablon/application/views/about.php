@@ -23,6 +23,7 @@
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
+
 <!-- Sidebar -->
 <aside class="col-sm-4 sidebar sidebar-right">
 
