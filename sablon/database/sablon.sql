@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Bulan Mei 2019 pada 07.17
+-- Waktu pembuatan: 22 Bulan Mei 2019 pada 10.06
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -63,34 +63,9 @@ CREATE TABLE `customproduk` (
   `type` varchar(50) DEFAULT NULL,
   `ukuran` varchar(5) DEFAULT NULL,
   `harga` int(10) DEFAULT NULL,
-  `gambarcustom` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `design`
---
-
-CREATE TABLE `design` (
-  `iddesign` int(5) NOT NULL,
-  `idcustomproduk` int(11) NOT NULL,
-  `gambardesign` varchar(200) NOT NULL,
+  `gambarcustom` varchar(100) NOT NULL,
   `hargadesign` int(20) NOT NULL,
   `ukurandesign` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `desin`
---
-
-CREATE TABLE `desin` (
-  `iddesign` int(5) NOT NULL,
-  `gambardesign` varchar(50) DEFAULT NULL,
-  `hargadesign` int(10) DEFAULT NULL,
-  `ukurandesign` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -104,10 +79,11 @@ CREATE TABLE `detailpesan` (
   `iduser` int(5) NOT NULL,
   `idcustomproduk` int(11) NOT NULL,
   `idproduk` int(5) NOT NULL,
-  `iddesign` int(5) NOT NULL,
+  `gambardesign` varchar(50) NOT NULL,
   `kuantiti` int(5) NOT NULL,
   `total` int(15) NOT NULL,
-  `harga` int(15) NOT NULL
+  `harga` int(15) NOT NULL,
+  `tglpesan` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -145,9 +121,23 @@ CREATE TABLE `pemesan` (
 CREATE TABLE `produk` (
   `idproduk` int(5) NOT NULL,
   `namaproduk` varchar(25) NOT NULL,
+  `type` varchar(50) NOT NULL,
   `ukuran` varchar(25) NOT NULL,
   `gambar` varchar(100) NOT NULL,
   `harga` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `proses`
+--
+
+CREATE TABLE `proses` (
+  `idproses` int(5) NOT NULL,
+  `iddetailpesan` int(5) NOT NULL,
+  `tglselesai` date NOT NULL,
+  `status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -192,18 +182,6 @@ ALTER TABLE `customproduk`
   ADD PRIMARY KEY (`idcustomproduk`);
 
 --
--- Indeks untuk tabel `design`
---
-ALTER TABLE `design`
-  ADD PRIMARY KEY (`iddesign`);
-
---
--- Indeks untuk tabel `desin`
---
-ALTER TABLE `desin`
-  ADD PRIMARY KEY (`iddesign`);
-
---
 -- Indeks untuk tabel `detailpesan`
 --
 ALTER TABLE `detailpesan`
@@ -220,6 +198,12 @@ ALTER TABLE `konfmasi`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`idproduk`);
+
+--
+-- Indeks untuk tabel `proses`
+--
+ALTER TABLE `proses`
+  ADD PRIMARY KEY (`idproses`);
 
 --
 -- Indeks untuk tabel `user`
@@ -239,18 +223,6 @@ ALTER TABLE `customproduk`
   MODIFY `idcustomproduk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `design`
---
-ALTER TABLE `design`
-  MODIFY `iddesign` int(5) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT untuk tabel `desin`
---
-ALTER TABLE `desin`
-  MODIFY `iddesign` int(5) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT untuk tabel `konfmasi`
 --
 ALTER TABLE `konfmasi`
@@ -260,7 +232,13 @@ ALTER TABLE `konfmasi`
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `idproduk` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idproduk` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `proses`
+--
+ALTER TABLE `proses`
+  MODIFY `idproses` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
