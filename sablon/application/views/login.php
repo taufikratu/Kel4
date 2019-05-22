@@ -1,6 +1,5 @@
   <body bgcolor="white">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+    
 
                 <div class="modal-body">
 
@@ -12,6 +11,10 @@
                                 <input type="text" name="username" class="form-control" placeholder="isi username">
                             </div>
                             <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Enter Email" required="">
+                            </div>
+                            <div class="form-group">
                                 <label class="mb-2">Kata Sandi</label>
                                 <input type="password" name="password" class="form-control" placeholder="isi kata sandi">
                             </div>
@@ -20,7 +23,7 @@
                             </p>
                             
                                 <a href="register">
-                                <button class="text-left pb-10" class="btn btn-primary submit mb-4"></i>silahkan daftar !</a></button>
+                                <button class="text-right pb-50" class="btn btn-primary submit mb-4"></i>silahkan daftar !</a></button>
                             
                                 <a href="lupapassword">
                                 <button class="text-right pb-50"class="btn btn-primary submit mb-4">Lupa Password</a></button>
