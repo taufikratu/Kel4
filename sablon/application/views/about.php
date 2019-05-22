@@ -72,7 +72,7 @@
 					<p>+234 23 9873237<br>
 					<a href="mailto:#">khairasablon@gmail.com</a><br>
 						<br>
-						234 Hidden Pond Road, Ashland City, TN 37015
+						KHAIRA SABLON, 2019
 					</p>
 				</div>
 			</div>
@@ -118,14 +118,14 @@
 
 			<div class="col-md-6 widget">
 				<div class="widget-body">
-					<p>234 Hidden Pond Road, Ashland City, TN 37015 </p>
+					<p>Khaira Sablon 2019 </p>
 				</div>
 			</div>
 
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2014, Your awesome name here<br>
+						Copyright &copy; 2019,Khaira Sablon <br>
 						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
 				</div>
 			</div>
