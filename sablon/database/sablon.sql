@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2019 at 04:34 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Waktu pembuatan: 22 Bulan Mei 2019 pada 10.06
+-- Versi server: 10.1.35-MariaDB
+-- Versi PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 
 DELIMITER $$
 --
--- Procedures
+-- Prosedur
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `produkbj` (IN `idpdk` INT)  NO SQL
 BEGIN
@@ -33,7 +33,7 @@ WHERE idproduk=idpdk;
 END$$
 
 --
--- Functions
+-- Fungsi
 --
 CREATE DEFINER=`root`@`localhost` FUNCTION `bajusmpk50k` () RETURNS INT(11) NO SQL
 return (select count(*) from produk where harga <50000)$$
@@ -43,7 +43,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -55,41 +55,46 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `design`
+-- Struktur dari tabel `customproduk`
 --
 
-CREATE TABLE `design` (
-  `iddesign` int(5) NOT NULL,
-  `gambardesign` varchar(200) NOT NULL,
-  `hargadesign` int(20) NOT NULL
+CREATE TABLE `customproduk` (
+  `idcustomproduk` int(11) NOT NULL,
+  `type` varchar(50) DEFAULT NULL,
+  `ukuran` varchar(5) DEFAULT NULL,
+  `harga` int(10) DEFAULT NULL,
+  `gambarcustom` varchar(100) NOT NULL,
+  `hargadesign` int(20) NOT NULL,
+  `ukurandesign` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `detailpesan`
+-- Struktur dari tabel `detailpesan`
 --
 
 CREATE TABLE `detailpesan` (
   `iddetailpesan` int(5) NOT NULL,
   `iduser` int(5) NOT NULL,
-  `idpesan` int(5) NOT NULL,
+  `idcustomproduk` int(11) NOT NULL,
   `idproduk` int(5) NOT NULL,
-  `iddesign` int(5) NOT NULL,
+  `gambardesign` varchar(50) NOT NULL,
   `kuantiti` int(5) NOT NULL,
   `total` int(15) NOT NULL,
-  `harga` int(15) NOT NULL
+  `harga` int(15) NOT NULL,
+  `tglpesan` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `konfmasi`
+-- Struktur dari tabel `konfmasi`
 --
 
 CREATE TABLE `konfmasi` (
   `idkonfirmasi` int(5) NOT NULL,
-  `idpesan` int(5) NOT NULL,
+  `iddetailpesan` int(5) NOT NULL,
   `namabank` varchar(15) NOT NULL,
   `norekening` int(20) NOT NULL,
   `namarekening` varchar(50) NOT NULL
@@ -98,8 +103,8 @@ CREATE TABLE `konfmasi` (
 -- --------------------------------------------------------
 
 --
--- Stand-in structure for view `pemesan`
--- (See below for the actual view)
+-- Stand-in struktur untuk tampilan `pemesan`
+-- (Lihat di bawah untuk tampilan aktual)
 --
 CREATE TABLE `pemesan` (
 `nama` varchar(200)
@@ -110,39 +115,35 @@ CREATE TABLE `pemesan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pesan`
---
-
-CREATE TABLE `pesan` (
-  `idpesan` int(5) NOT NULL,
-  `tglpesan` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `produk`
+-- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
   `idproduk` int(5) NOT NULL,
   `namaproduk` varchar(25) NOT NULL,
-  `warna` varchar(25) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `ukuran` varchar(25) NOT NULL,
   `gambar` varchar(100) NOT NULL,
   `harga` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `produk`
+-- Struktur dari tabel `proses`
 --
 
-INSERT INTO `produk` (`idproduk`, `namaproduk`, `warna`, `gambar`, `harga`) VALUES
-(1, 'kaos', 'merah', '', 5000);
+CREATE TABLE `proses` (
+  `idproses` int(5) NOT NULL,
+  `iddetailpesan` int(5) NOT NULL,
+  `tglselesai` date NOT NULL,
+  `status` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -150,13 +151,15 @@ CREATE TABLE `user` (
   `email` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL,
   `nama` varchar(200) NOT NULL,
-  `telp` varchar(12) NOT NULL
+  `telp` varchar(12) NOT NULL,
+  `pertanyaan` varchar(50) NOT NULL,
+  `jawaban` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Structure for view `pemesan`
+-- Struktur untuk view `pemesan`
 --
 DROP TABLE IF EXISTS `pemesan`;
 
@@ -167,78 +170,78 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indexes for table `design`
+-- Indeks untuk tabel `customproduk`
 --
-ALTER TABLE `design`
-  ADD PRIMARY KEY (`iddesign`);
+ALTER TABLE `customproduk`
+  ADD PRIMARY KEY (`idcustomproduk`);
 
 --
--- Indexes for table `detailpesan`
+-- Indeks untuk tabel `detailpesan`
 --
 ALTER TABLE `detailpesan`
   ADD PRIMARY KEY (`iddetailpesan`);
 
 --
--- Indexes for table `konfmasi`
+-- Indeks untuk tabel `konfmasi`
 --
 ALTER TABLE `konfmasi`
   ADD PRIMARY KEY (`idkonfirmasi`);
 
 --
--- Indexes for table `pesan`
---
-ALTER TABLE `pesan`
-  ADD PRIMARY KEY (`idpesan`);
-
---
--- Indexes for table `produk`
+-- Indeks untuk tabel `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`idproduk`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `proses`
+--
+ALTER TABLE `proses`
+  ADD PRIMARY KEY (`idproses`);
+
+--
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`email`),
   ADD UNIQUE KEY `iduser` (`iduser`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `design`
+-- AUTO_INCREMENT untuk tabel `customproduk`
 --
-ALTER TABLE `design`
-  MODIFY `iddesign` int(5) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `customproduk`
+  MODIFY `idcustomproduk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `konfmasi`
+-- AUTO_INCREMENT untuk tabel `konfmasi`
 --
 ALTER TABLE `konfmasi`
   MODIFY `idkonfirmasi` int(5) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `pesan`
---
-ALTER TABLE `pesan`
-  MODIFY `idpesan` int(5) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `produk`
+-- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `idproduk` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idproduk` int(5) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `proses`
+--
+ALTER TABLE `proses`
+  MODIFY `idproses` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `iduser` int(5) NOT NULL AUTO_INCREMENT;
