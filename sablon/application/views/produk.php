@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">KAOS 2</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
+          <img src= <?php echo base_url('assets/images/images.png'); ?>>
           <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
           <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
         </div>
