@@ -88,25 +88,6 @@ $(document).ready(function() {
                             </div>
                             
                             <div class="form-group">
-                                <div class="col-xs-12">
-                                    <div class="col-xs-3 col-xs-offset-3">
-                                        <div class="checkbox">
-                                            <h5>
-                                                <input type="checkbox" name="emailYn" value="Y" class="check" id="emailYn" checked="" style="width: auto"> Terima Email
-                                            </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-5">
-                                        <div class="checkbox">
-                                            <h5>
-                                                <input type="checkbox" name="emailVerify" value="Y" class="check" id="emailVerify" style="width: auto"> Otentikasi alamat email saya
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
                                 <h4 class="col-xs-3 no-gap">Password Hint</h4>
                                 <div class="col-xs-7">
                                     <select class="form-control" id="hint" name="hint">
