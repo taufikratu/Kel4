@@ -21,6 +21,15 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	<style>
+	img{
+		width : 300px;
+		height : 200px;
+		border : 4px solid #575D63;
+     	padding: 10px;
+		margin : 20px;
+	}
+	</style>
 </head>
 <body>
 
@@ -48,9 +57,11 @@
 
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
+				<p>Kini setiap orang tentu ingin mendapatkan segala sesuatu dengan lebih mudah. Dengan berkembangnya teknologi yang semakin canggih akan memudahkan bagi siapa saja untuk mendapatkan yang sedang mereka inginkan. Salah satu contoh yang kini kerap sekali di jumpai adalah Khaira Sablon. Dimana cukup duduk santai di rumah, membuka gadget, mengetik sesuatu yang sedang diinginkan pasti akan bisa terpenuhi dengan sangat mudah sekali. Dengan berkembangnya teknologi yang semakin canggih memang akan sangat memudahkan bagi siapa saja untuk mendapatkan segala sesuatu. Akan tetapi juga harus di ketahui, dengan berkembangnya teknologi yang semakin canggih juga akan mempersulit anda sendiri.  </p>
 				<p><img src="assets/images/mac.jpg" alt="" class="" width="100%" ></p>
-				<h3>Necessitatibus</h3>
+				<h3>Cara Order</h3>
+				<p><img src= <?php echo base_url('assets/images/qwe.jpg'); ?>><img src= <?php echo base_url('assets/images/eef.jpg'); ?>></p></p>
+				<p><img src= <?php echo base_url('assets/images/download.png'); ?>></p>
 				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>
 				<h3>Fugit, laboriosam</h3>
 				<p>Eum, quasi, est, vitae, ipsam nobis consectetur ea aspernatur ad eos voluptatibus fugiat nisi perferendis impedit. Quam, nulla, excepturi, voluptate minus illo tenetur sint ab in culpa cumque impedit quibusdam. Saepe, molestias quia voluptatem natus velit fugiat omnis rem eos sapiente quasi quaerat aspernatur quisquam deleniti accusantium laboriosam odio id?</p>
