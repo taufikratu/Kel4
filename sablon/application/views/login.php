@@ -1,23 +1,81 @@
-  <body bgcolor="white">
+        <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+});
+
+</script>   
     
-
-                <div class="modal-body">
-
-                    <div class="login px-4 mx-auto mw-100">
-                        <h5 class="text-center mb-4">Masuk</h5>
-                        <form class="form-signin" method="post">
+<section id="Login">
+    <div class="container">
+        <div class="ads_google" style="margin-left:-150px;margin-top:200px;position: absolute;">
+            <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- gemscool_member_left_120x600 -->
+            <ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-8139500882325932" data-ad-slot="4424435531" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><iframe width="120" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:120px;height:600px;" __idm_frm__="56"></iframe></ins></ins></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="row row-content">
+            <br>
+            <div class="col-xs-12">
+                <div class="text-center">
+            
+    </div>          </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12">
+                    
+                <h2 class="section-title"><span>Login</span></h2>
+                <div class="common-box-shadow"> 
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <br>
+                        <form class="form-horizontal" id="frmRegister" name="frmRegister" action="" method="post" role="form">
+                            <input type="hidden" id="checkID" name="checkID" value="N">
+                            <input type="hidden" name="ip" value="115.178.254.157">
                             <div class="form-group">
-                                <label class="mb-2">Nama Pengguna</label>
-                                <input type="text" name="username" class="form-control" placeholder="isi username">
+                                <h4 class="col-xs-3 no-gap-form">Nama Pengguna</h4>
+                                <div class="col-xs-7">
+                                    <input class="form-control" id="id user" name="id" value="" type="text" maxlength="12" placeholder="Nama pengguna" empty_check="true" min_byte_length="6" max_byte_length="12">
+                                    <p class="p_konfirmasi" id="idMessage"></p>
+                                </div>
+                                <div class="col-xs-2">
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="form-group">
+                                <h4 class="col-xs-3 no-gap-form">Password</h4>
+                                <div class="col-xs-7">
+                                    <input class="form-control" id="password_gemscool" name="password" type="password" maxlength="12" autocomplete="off" onkeyup="checkPassLevel(this.value);" placeholder="Masukkan Password" empty_check="true" min_value="6" max_value="12">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="Enter Email" required="">
+                                <h4 class="col-xs-3 no-gap">Alamat Email</h4>
+                                <div class="col-xs-7 no-gap">
+                                    <div class="col-xs-6">
+                                        <input class="form-control" type="text" id="mailid" name="mailid" value="" placeholder="Alamat Email" field_name="Email Address" empty_check="true" maxlength="100">
+                                    </div>
+                                    <div class="col-xs-6 no-gap">
+                                        <div class="col-xs-1 no-gap">
+                                            <h2 class="at">@</h2>
+                                        </div>
+                                        <div class="col-xs-11">
+                                            <input type="text" id="etcdomain" name="etcdomain" value="" class="text gray" style="width:100px;display:none;" maxlength="100">
+                                            <select class="form-control" id="maildomain" name="maildomain">
+                                                
+                                                <option value="gmail.com">gmail.com</option>
+                                                <option value="yahoo.com">yahoo.com</option>
+                                                <option value="yahoo.co.id">yahoo.co.id</option>
+                                                <option value="etc">DLL (Dan Lain-Lain)</option>
+                                            </select>
+                                            <input type="hidden" name="email" id="email">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="mb-2">Kata Sandi</label>
-                                <input type="password" name="password" class="form-control" placeholder="isi kata sandi">
-                            </div>
+                            
                             <p class="text-center pb-10">
                                 <button type="submit" name="submit" class="btn btn-primary submit mb-4">Masuk</a></button>
                             </p>
@@ -27,18 +85,13 @@
                             
                                 <a href="lupapassword">
                                 <button class="text-right pb-50"class="btn btn-primary submit mb-4">Lupa Password</a></button>
-                            
-                        </form>
-        
+                                    <br><br>
+                                </div>
+                            </div>      
+                        </form> 
                     </div>
                 </div>
-
             </div>
         </div>
-      <hr>
-    <footer>
-        <p align="center">Tugas Akhir &copy; 2019</p>
-    </footer>
-
-    </div> 
-  </body>
+    </div>
+</section>
