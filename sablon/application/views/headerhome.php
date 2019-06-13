@@ -43,8 +43,8 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="Home">Home</a></li>
 					<li><a href="Bersuci">Order</a></li>
-					<li><a href="Sholat5waktu">Produk</a></li>
-					<li><a href="Jumat">About</a></li>
+					<li><a href="Produk">Produk</a></li>
+					<li><a href="About">About</a></li>
 					<li><a href="Login">Login</a></li>
 				</ul>
 			
