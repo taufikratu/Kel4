@@ -44,7 +44,7 @@
 					<li><a href="Bersuci">Order</a></li>
 					<li><a href="Sholat5waktu">Produk</a></li>
 					<li><a href="Jumat">About</a></li>
-					<li><a href="Mayit">Login</a></li>
+					<li><a href="Login">Login</a></li>
 				</ul>
 			
 			</div><!--/.nav-collapse -->			
