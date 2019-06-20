@@ -29,56 +29,29 @@
        <div class="row">
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">JAKET 1</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
+          <img src= <?php echo base_url('assets/images/YUI.jpg'); ?>>
           <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
           <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">JAKET 2</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
+          <img src= <?php echo base_url('assets/images/NU.jpg'); ?>>
           <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
           <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">JAKET 3</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
+          <img src= <?php echo base_url('assets/images/VHFHS.jpg'); ?>>
           <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
           <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">JAKET 4</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
+          <img src= <?php echo base_url('assets/images/VHFHS.jpg'); ?>>
           <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
           <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
         </div>
       </div>
-       <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">SERAGAM 1</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
-          <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">SERAGAM 2</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
-          <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">SERAGAM 3</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
-          <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">SERAGAM 4</h3>
-           <img src= <?php echo base_url('assets/image/s1.jpg.jpg"'); ?> alt"">
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
-          <p class="text-center"><a href="" class="btn btn-primary">Beli</a></p>
-        </div>
-      </div>
-       </div>
        <div class="row">
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">OLAHRAGA 1</h3>
