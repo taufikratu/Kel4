@@ -54,22 +54,15 @@ $(document).ready(function() {
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap">Alamat Email</h4>
                                 <div class="col-xs-7 no-gap">
-                                    <div class="col-xs-6">
+                                    <div class="col-xs-12">
                                         <input class="form-control" type="text" id="mailid" name="mailid" value="" placeholder="Alamat Email" field_name="Email Address" empty_check="true" maxlength="100">
                                     </div>
                                     <div class="col-xs-6 no-gap">
                                         <div class="col-xs-1 no-gap">
-                                            <h2 class="at">@</h2>
+                                           
                                         </div>
                                         <div class="col-xs-11">
-                                            <input type="text" id="etcdomain" name="etcdomain" value="" class="text gray" style="width:100px;display:none;" maxlength="100">
-                                            <select class="form-control" id="maildomain" name="maildomain">
-                                                
-                                                <option value="gmail.com">gmail.com</option>
-                                                <option value="yahoo.com">yahoo.com</option>
-                                                <option value="yahoo.co.id">yahoo.co.id</option>
-                                                <option value="etc">DLL (Dan Lain-Lain)</option>
-                                            </select>
+                                            
                                             <input type="hidden" name="email" id="email">
                                         </div>
                                     </div>

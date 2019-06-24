@@ -37,6 +37,7 @@ $(document).ready(function() {
                             <input type="hidden" id="checkID" name="checkID" value="N">
                             <input type="hidden" name="ip" value="115.178.254.157">
                             <div class="form-group">
+                            <form action="<?php echo base_url('index.php/member/c_daftar/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data" style="margin-left: 30px;">
                                 <h4 class="col-xs-3 no-gap-form">Nama Pengguna</h4>
                                 <div class="col-xs-7">
                                     <input class="form-control" id="Nama Pengguna" name="Nama Pengguna" value="" type="text" maxlength="12" placeholder="Nama Pengguna" empty_check="true" min_byte_length="6" max_byte_length="12">
