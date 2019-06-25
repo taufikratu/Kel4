@@ -35,9 +35,9 @@ $(document).ready(function() {
                             <input type="hidden" id="checkID" name="checkID" value="N">
                             <input type="hidden" name="ip" value="115.178.254.157">
                             <div class="form-group">
-                                <h4 class="col-xs-3 no-gap-form">Nama Pengguna</h4>
+                                <h4 class="col-xs-3 no-gap-form">Email</h4>
                                 <div class="col-xs-7">
-                                    <input class="form-control" id="id user" name="id" value="" type="text" maxlength="12" placeholder="Nama pengguna" empty_check="true" min_byte_length="6" max_byte_length="12">
+                                    <input class="form-control" id="id user" name="id" value="" type="email" maxlength="12" placeholder="Masukkan Email" empty_check="true" min_byte_length="6" max_byte_length="12">
                                     <p class="p_konfirmasi" id="idMessage"></p>
                                 </div>
                                 <div class="col-xs-2">
@@ -51,12 +51,7 @@ $(document).ready(function() {
                                     <input class="form-control" id="password_gemscool" name="password" type="password" maxlength="12" autocomplete="off" onkeyup="checkPassLevel(this.value);" placeholder="Masukkan Password" empty_check="true" min_value="6" max_value="12">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <h4 class="col-xs-3 no-gap">Alamat Email</h4>
-                                <div class="col-xs-7 no-gap">
-                                    <div class="col-xs-12">
-                                        <input class="form-control" type="text" id="mailid" name="mailid" value="" placeholder="Alamat Email" field_name="Email Address" empty_check="true" maxlength="100">
-                                    </div>
+                            
                                     <div class="col-xs-6 no-gap">
                                         <div class="col-xs-1 no-gap">
                                            
