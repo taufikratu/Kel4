@@ -38,16 +38,18 @@ $(document).ready(function() {
                             <input type="hidden" name="ip" value="115.178.254.157">
                             <div class="form-group">
                             <form action="<?php echo base_url('index.php/member/c_daftar/tambah_aksi'); ?>" method="POST" enctype="multipart/form-data" style="margin-left: 30px;">
+
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
                                 <h4 class="col-xs-3 no-gap-form">Nama</h4>
                                 <div class="col-xs-7">
                                     <input class="form-control" id="Nama" name="nama" value="" type="text" maxlength="12" placeholder="Nama Pengguna" empty_check="true" min_byte_length="6" max_byte_length="12">
                                     <p class="p_konfirmasi" id="idMessage"></p>
-                                </div>
-                                <div class="col-xs-12">
-                                    <?php echo form_error('nama', '<span class="text-danger">','</span>')?>
-                                    
-                                </div>
-                                <div class="col-xs-2">
                                 </div>
                             </div>
                         
@@ -57,9 +59,7 @@ $(document).ready(function() {
                                     <input class="form-control"  id="password_gemscool" name="password" type="password" maxlength="12" autocomplete="off" onkeyup="checkPassLevel(this.value);" placeholder="Minimum password adalah 7 karakter kombinasi huruf dan angka" empty_check="true" min_value="6" max_value="12">
                                 </div>
                             </div>
-                             <div class="col-xs-12">
-                                    <?php echo form_error('password', '<span class="text-danger">','</span>')?>
-                
+
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap">Ketik Ulang Password</h4>
                                 <div class="col-xs-7">
@@ -67,9 +67,7 @@ $(document).ready(function() {
                                     <span class="secure"><img id="sec_img" src="https://img.gemscool.com/gemscool/img/icon/sec_weak.png" alt="" style="display:none;"><em id="sec_txt" style="display:none;">Weak</em></span>
                                 </div>
                             </div>
-                             <div class="col-xs-12">
-                                    <?php echo form_error('repassword', '<span class="text-danger">','</span>')?>
-                            
+                             
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap">Alamat Email</h4>
                                 <div class="col-xs-7 no-gap">
@@ -82,7 +80,7 @@ $(document).ready(function() {
                                         </div>
                                         <div class="col-xs-11">
                                              <div class="col-xs-12">
-                                    <?php echo form_error('email', '<span class="text-danger">','</span>')?>
+                                   
                                 
                                             <input type="hidden" name="email" id="email">
                                         </div>
@@ -102,17 +100,15 @@ $(document).ready(function() {
                                         </select>
                                 </div>
                             </div>
-                             <div class="col-xs-12">
-                                    <?php echo form_error('pertanyaan', '<span class="text-danger">','</span>')?>
-                            
+            
+                                   
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap-form">Hint Answer</h4>
                                 <div class="col-xs-7">
                                     <input class="form-control" type="text" id="answer" name="answer" value="" maxlength="200" placeholder="Hati-hati! Jawaban di gunakan untuk mereset akun kamu">
                                 </div>
-                            </div>
-                             <div class="col-xs-12">
-                                    <?php echo form_error('Jawaban', '<span class="text-danger">','</span>')?>
+
+                             
                             
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap-form">Telepon</h4>
@@ -120,9 +116,8 @@ $(document).ready(function() {
                                     <input class="form-control" type="text" id="phone" name="phone" value="" maxlength="12" number_only="" placeholder="Telepon/HP">
                                 </div>
                             </div>
-                             <div class="col-xs-12">
-                                    <?php echo form_error('telp', '<span class="text-danger">','</span>')?>
                             
+                           <div class="form-group"> 
                             <div class="clearfix"></div>
                             <div class="row row-captcha">                               
                                 <div class="col-xs-7 col-xs-offset-3">
