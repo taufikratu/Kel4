@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 });
 
-</script>   
+</script>
     
 <section id="Login">
     <div class="container">

@@ -3,14 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Register extends CI_Controller {
 
-		public function __construct()
+		public function __costruct()
 {
-	parent::_construct();
+	parent::_costruct();
 	$this->load->model('m_login');
 	$this->load->library('form_validation');
 	$this->load->helper('url', 'html');
-}
-	
+}	
 	public function index()
 	{
 		$this->load->view('header');
@@ -45,15 +44,14 @@ class Register extends CI_Controller {
 				$this->session->set_flashdata('pesan', 'data anda sudah tersimpan ke database');
 				redirect('Register', 'refresh');
 			}
-			else{
+			else
 				$this->index();
 				
 		}
-			else 
+			else
 		{
 			$this->index();
 		}
 			}
 	}
-}
 ?>
