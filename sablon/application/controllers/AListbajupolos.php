@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class AListbajupolos extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,8 +20,9 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->data['bajupolos']=$this->db->get('bajupolos')->result_array();
 		$this->header();
-		$this->load->view('admin/dashboard');
+		$this->load->view('admin/listbajupolos',$this->data);
 		$this->footer();		
 
 	}
@@ -33,5 +34,4 @@ class Dashboard extends CI_Controller {
 	{
 		$this->load->view('admin/footer');
 	}
-
 }
