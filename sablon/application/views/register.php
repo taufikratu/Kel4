@@ -42,12 +42,12 @@
                         <form action="<?php echo base_url('index.php/Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
                      
                             
-                            <div class="form-group">
+                           <!--  <div class="form-group">
                                 <label for="nis">ID USER</label>
                                 <input class="form-control "
                                  type="text" name="iduser" placeholder="- isi disini -" />
                                 
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label for="nis">EMAIL</label>

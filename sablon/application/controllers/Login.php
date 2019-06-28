@@ -52,7 +52,7 @@
 					'password' => $password,
 				);
 				$this->session->set_userdata($data_session);
-				redirect('admin/dashboard');
+				redirect('index.php/dashboard');
 			}else{
 				echo "Password atau Username Salah coy";
 			}

@@ -7,7 +7,7 @@
 	{
 		private $_table = "user";
 
-		public $iduser;
+		// public $iduser;
 		public $email;
 		public $password;
 		public $nama;
@@ -17,7 +17,7 @@
 
 		function add_user()
 		{
-			$iduser = $this->input->post("iduser");
+			// $iduser = $this->input->post("iduser");
 			$email = $this->input->post("email");
 			$password = $this->input->post("password");
 			$nama = $this->input->post("nama");
@@ -25,7 +25,7 @@
 			$pertanyaan = $this->input->post("pertanyaan");
 			$jawaban = $this->input->post("jawaban");
 			$data = array(
-				'iduser' => $iduser,
+				// 'iduser' => $iduser,
 				'email' => $email,
 				'password' => $password,
 				'nama' => $nama,
