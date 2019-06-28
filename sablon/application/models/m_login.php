@@ -1,29 +1,15 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-class M_login extends CI_Model {
-	var $table = "user";
-	public function_construct()
-	{
-		parent::_construct();
-		$this->load->database();
-	}
-    public function login( $email, $password)
+    defined('BASEPATH') OR exit('No direct script access allowed');
+    
+    class M_Login extends CI_Model
     {
-    	$this->db->select(*);
-    	$this->db->from($this->table);
-    	$this->db->where([ 'email'=>$email, 'password'=>$password ]);
-    	$return= $this->db->get('');
-    	if ($return->num_rows() > 0) {
-    		echo "sukses";
-    	}
-    	else
-    {
-    	echo "tidak ada";
-    }
-
-    {
-        public function TambahUser($data)
+        function __construct()
         {
-            $this->db->insert('user', '$data');
+              parent::__construct();
+        }
+        function cek_login($table,$where)
+        {
+            return $this->db->get_where($table,$where);
         }
     }
+?>

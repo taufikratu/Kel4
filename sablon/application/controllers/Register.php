@@ -1,57 +1,40 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Register extends CI_Controller {
-
-		public function __costruct()
-{
-	parent::_costruct();
-	$this->load->model('m_login');
-	$this->load->library('form_validation');
-	$this->load->helper('url', 'html');
-}	
-	public function index()
+	defined('BASEPATH') OR exit('No direct script access allowed');
+	/**
+	 * 
+	 */
+	class Register extends CI_Controller
 	{
-		$this->load->view('header');
-		$this->load->view('register');
-		$this->load->view('footer');
-
-	}
-	public function insertUser()
-	{
-		$this->form_validation->set_rules('nama', 'nama', 'required');
-		$this->form_validation->set_rules('password', 'password', 'required');
-		$this->form_validation->set_rules('pertanyaan', 'pertanyaan', 'required');
-		$this->form_validation->set_rules('jawaban', 'jawaban', 'required');
-		$this->form_validation->set_rules('telp', 'telp', 'required');
-		$this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
-		if ($this->form_validation->run()) 
+		
+		function __construct()
 		{
-			$nama = $this->input->post('nama');
-			$password = $this->input->post('password');
-			$pertanyaan = $this->input->post('pertanyaan');
-			$jawaban = $this->input->post('jawaban');
-			$telp = $this->input->post('telp');	
-
-			$user = (['nama'=>$nama,
-						'password'=>$password,
-						'pertanyaan'=>$pertanyaan,
-						'jawaban'=>$jawaban,
-						'telp'=>$telp]);
-			$data = array_merge($user);
-			if ($this->m_login->TambahUser($data) == false ) 
-			{
-				$this->session->set_flashdata('pesan', 'data anda sudah tersimpan ke database');
-				redirect('Register', 'refresh');
-			}
-			else
-				$this->index();
-				
+			
+			parent::__construct();
+			$this->load->model('m_register');
+			$this->load->library('form_validation');
+			$this->load->helper('url', 'form');
 		}
-			else
+		function index()
 		{
-			$this->index();
+			
+			$this->load->view('header.php');
+			$data['user'] = $this->m_register->ambil_data()->result();
+			$this->load->view('register',$data);
+			
+			// $this->load->view('register.php');
+			$this->load->view('footer.php');
 		}
-			}
+
+		function tambah_user()
+		{ 
+			$user = $this->m_register;
+			$user->add_user();
+			redirect('register');
+		}
+
+		function form_register()
+		{
+			$this->load->view('dd_user');
+		}
 	}
 ?>

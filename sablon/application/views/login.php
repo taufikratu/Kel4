@@ -31,13 +31,14 @@ $(document).ready(function() {
                 <div class="common-box-shadow"> 
                     <div class="col-xs-10 col-xs-offset-1">
                         <br>
-                        <form class="form-horizontal" id="frmRegister" name="frmRegister" action="" method="post" role="form">
-                            <input type="hidden" id="checkID" name="checkID" value="N">
-                            <input type="hidden" name="ip" value="115.178.254.157">
+                        <form class="form-horizontal" action="<?php echo base_url('index.php/login/aksi_login');?>" method="post" role="form">
+                          <!--   <input type="hidden" id="checkID" name="checkID" value="N">
+                            <input type="hidden" name="ip" value="115.178.254.157"> -->
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap-form">Email</h4>
                                 <div class="col-xs-7">
-                                    <input class="form-control" id="id user" name="id" value="" type="email" maxlength="12" placeholder="Masukkan Email" empty_check="true" min_byte_length="6" max_byte_length="12">
+                                    <!-- <input class="form-control" id="email"  name="email" type="email"  placeholder="Masukkan Email" empty_check="true"> -->
+                                    <input class="form-control" id="email"  name="email" type="text"  placeholder="Masukkan Email">
                                     <p class="p_konfirmasi" id="idMessage"></p>
                                 </div>
                                 <div class="col-xs-2">
@@ -48,7 +49,7 @@ $(document).ready(function() {
                             <div class="form-group">
                                 <h4 class="col-xs-3 no-gap-form">Password</h4>
                                 <div class="col-xs-7">
-                                    <input class="form-control" id="password_gemscool" name="password" type="password" maxlength="12" autocomplete="off" onkeyup="checkPassLevel(this.value);" placeholder="Masukkan Password" empty_check="true" min_value="6" max_value="12">
+                                    <input class="form-control" id="password" name="password" type="password" placeholder="Masukkan Password" empty_check="true">
                                 </div>
                             </div>
                             
@@ -58,7 +59,7 @@ $(document).ready(function() {
                                         </div>
                                         <div class="col-xs-11">
                                             
-                                            <input type="hidden" name="email" id="email">
+                                            <!-- <input type="hidden" name="email" id="email"> -->
                                         </div>
                                     </div>
                                 </div>
