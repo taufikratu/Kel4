@@ -76,7 +76,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">AKSI:</h6>
-            <a class="collapse-item" href="listuser">List User</a>
+            <a class="collapse-item" href="<?php echo base_url ('alistuser');?>">List User</a>
           </div>
         </div>
       </li>
