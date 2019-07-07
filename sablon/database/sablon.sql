@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Bulan Mei 2019 pada 10.06
+-- Waktu pembuatan: 07 Jul 2019 pada 15.52
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -55,6 +55,61 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `bajupolos`
+--
+
+CREATE TABLE `bajupolos` (
+  `idbajupolos` int(5) NOT NULL,
+  `namabaju` varchar(100) DEFAULT NULL,
+  `deskripsi` varchar(1000) DEFAULT NULL,
+  `tipe` varchar(100) DEFAULT NULL,
+  `gambar` varchar(100) DEFAULT NULL,
+  `hargas` int(15) DEFAULT NULL,
+  `hargam` int(15) DEFAULT NULL,
+  `hargal` int(15) DEFAULT NULL,
+  `hargaxl` int(15) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `bajupolos`
+--
+
+INSERT INTO `bajupolos` (`idbajupolos`, `namabaju`, `deskripsi`, `tipe`, `gambar`, `hargas`, `hargam`, `hargal`, `hargaxl`) VALUES
+(2, '63000 Gildan Softstyle', 'Gildan merupakan salah satu perusahaan clothing internasional yang berkantor di Canada. Kaos yang diproduksi Gildan sudah tidak perlu diragukan lagi kualitasnya. Setiap kaos yang diproduksi oleh Gildan telah melewati tahap-tahap Quality Control yang sangat ketat.', 'Kaos', 'gildan-white.jpg', 30000, 30000, 30000, 35000);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `bajuproduk`
+--
+
+CREATE TABLE `bajuproduk` (
+  `idbajuproduk` int(5) NOT NULL,
+  `namabaju` varchar(100) DEFAULT NULL,
+  `deskripsi` varchar(1000) DEFAULT NULL,
+  `tipe` varchar(100) DEFAULT NULL,
+  `gambar` varchar(100) DEFAULT NULL,
+  `hargas` int(15) DEFAULT NULL,
+  `hargam` int(15) DEFAULT NULL,
+  `hargal` int(15) DEFAULT NULL,
+  `hargaxl` int(15) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `bajuproduk`
+--
+
+INSERT INTO `bajuproduk` (`idbajuproduk`, `namabaju`, `deskripsi`, `tipe`, `gambar`, `hargas`, `hargam`, `hargal`, `hargaxl`) VALUES
+(3, 'Kaos Indonesian Judo', 'T-Shirt Gildan Soft Style dibuat tanpa jahitan samping (built-up), menggunakan 100?han cotton dengan jahitan yang rapi, standar ketebalan yang diukur tepat serta pewarnaan dengan kualitas yang prima sehingga warna dari waktu ke waktu tetap sama. Setiap produk melewati proses preshrunk sehingga penyusutan setelah pencucian sangat minimal dibandingkan dengan jenis kaos lainnya.', 'Kaos', 'judo.jpg', 97000, 97000, 97000, 103000),
+(4, 'Kaos PAC MAN', 'T-Shirt Gildan Soft Style dibuat tanpa jahitan samping (built-up), menggunakan 100?han cotton dengan jahitan yang rapi, standar ketebalan yang diukur tepat serta pewarnaan dengan kualitas yang prima sehingga warna dari waktu ke waktu tetap sama. Setiap produk melewati proses preshrunk sehingga penyusutan setelah pencucian sangat minimal dibandingkan dengan jenis kaos lainnya.\r\n', 'Kaos', 'pacman.jpg', 102000, 102000, 102000, 107000),
+(5, 'Kaos Anak Beruang Ngopi', 'T-Shirt Gildan Soft Style dibuat tanpa jahitan samping (built-up), menggunakan 100?han cotton dengan jahitan yang rapi, standar ketebalan yang diukur tepat serta pewarnaan dengan kualitas yang prima sehingga warna dari waktu ke waktu tetap sama. Setiap produk melewati proses preshrunk sehingga penyusutan setelah pencucian sangat minimal dibandingkan dengan jenis kaos lainnya.', 'Kaos', 'ngopi.jpg', 127000, 127000, 127000, 133000),
+(6, 'Kaos Fight Gear', 'T-Shirt Gildan Soft Style dibuat tanpa jahitan samping (built-up), menggunakan 100?han cotton dengan jahitan yang rapi, standar ketebalan yang diukur tepat serta pewarnaan dengan kualitas yang prima sehingga warna dari waktu ke waktu tetap sama. Setiap produk melewati proses preshrunk sehingga penyusutan setelah pencucian sangat minimal dibandingkan dengan jenis kaos lainnya.', 'Kaos', 'fight.jpg', 101000, 101000, 101000, 106000),
+(7, 'Kaos Martial Arts Kick', 'T-Shirt Gildan Soft Style dibuat tanpa jahitan samping (built-up), menggunakan 100?han cotton dengan jahitan yang rapi, standar ketebalan yang diukur tepat serta pewarnaan dengan kualitas yang prima sehingga warna dari waktu ke waktu tetap sama. Setiap produk melewati proses preshrunk sehingga penyusutan setelah pencucian sangat minimal dibandingkan dengan jenis kaos lainnya.\r\n', 'Kaos', 'arts.jpg', 107000, 107000, 107000, 113000),
+(8, 'Jaket Hoodie PECINTA GORENGAN', 'Hoodie tanpa resleting yang terbuat dari bahan Katun Baby Terry, Premium Quality. Hoodie diproduksi dengan standar dan quality control sangat ketat, setara dengan produk-produk yang ditawarkan di distro-distro terkenal di Bandung.', 'Jaket', 'jaketgoreng.jpg', 153000, 153000, 153000, 158000);
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `customproduk`
 --
 
@@ -63,8 +118,10 @@ CREATE TABLE `customproduk` (
   `type` varchar(50) DEFAULT NULL,
   `ukuran` varchar(5) DEFAULT NULL,
   `harga` int(10) DEFAULT NULL,
-  `gambarcustom` varchar(100) NOT NULL,
-  `hargadesign` int(20) NOT NULL,
+  `gambarcustomdepan` varchar(100) NOT NULL,
+  `gambarcustombelakang` varchar(100) NOT NULL,
+  `hargadesigndepan` int(20) NOT NULL,
+  `hargadesignbelakang` int(20) NOT NULL,
   `ukurandesign` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -79,7 +136,8 @@ CREATE TABLE `detailpesan` (
   `iduser` int(5) NOT NULL,
   `idcustomproduk` int(11) NOT NULL,
   `idproduk` int(5) NOT NULL,
-  `gambardesign` varchar(50) NOT NULL,
+  `gambardesigndepan` varchar(50) NOT NULL,
+  `gambardesignbelakang` varchar(50) NOT NULL,
   `kuantiti` int(5) NOT NULL,
   `total` int(15) NOT NULL,
   `harga` int(15) NOT NULL,
@@ -123,7 +181,8 @@ CREATE TABLE `produk` (
   `namaproduk` varchar(25) NOT NULL,
   `type` varchar(50) NOT NULL,
   `ukuran` varchar(25) NOT NULL,
-  `gambar` varchar(100) NOT NULL,
+  `gambardepan` varchar(100) NOT NULL,
+  `gambarbelakang` varchar(100) NOT NULL,
   `harga` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -156,6 +215,13 @@ CREATE TABLE `user` (
   `jawaban` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `user`
+--
+
+INSERT INTO `user` (`iduser`, `email`, `password`, `nama`, `telp`, `pertanyaan`, `jawaban`) VALUES
+(1, 'rahmantaufikur10@gmail.com', '12345', 'taufik', '081216142451', 'Apa nama hewan peliharaan anda?', 'asu');
+
 -- --------------------------------------------------------
 
 --
@@ -174,6 +240,18 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`email`);
+
+--
+-- Indeks untuk tabel `bajupolos`
+--
+ALTER TABLE `bajupolos`
+  ADD PRIMARY KEY (`idbajupolos`);
+
+--
+-- Indeks untuk tabel `bajuproduk`
+--
+ALTER TABLE `bajuproduk`
+  ADD PRIMARY KEY (`idbajuproduk`);
 
 --
 -- Indeks untuk tabel `customproduk`
@@ -217,6 +295,18 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `bajupolos`
+--
+ALTER TABLE `bajupolos`
+  MODIFY `idbajupolos` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `bajuproduk`
+--
+ALTER TABLE `bajuproduk`
+  MODIFY `idbajuproduk` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT untuk tabel `customproduk`
 --
 ALTER TABLE `customproduk`
@@ -244,7 +334,7 @@ ALTER TABLE `proses`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `iduser` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

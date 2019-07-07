@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
 	<title>Khaira Sablon</title>
 
@@ -21,12 +21,11 @@
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
-<body class="home">
+<body>
 
 <header id="header">
-	<div id="head" class="parallax" parallax-speed="9">
+	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src=<?php echo base_url ("assets/images/logo.png");?> alt="">
 			<span class="title">Khaira Sablon</span>
 		</h1>
 	</div>
@@ -40,25 +39,15 @@
 			
 			<div class="navbar-collapse collapse">
 				
-				<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav">
 					<li class="active"><a href="Home">Home</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Order <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="<?php echo base_url ('orderkaos');?>">KAOS</a></li>
-							<li><a href="<?php echo base_url ('orderjaket');?>">JAKET</a></li>
-							<li><a href="<?php echo base_url ('orderolahraga');?>">OLAHRAGA</a></li>
-						</ul>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produk <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="<?php echo base_url ('produkkaos');?>">KAOS</a></li>
-							<li><a href="<?php echo base_url ('produkjaket');?>">JAKET</a></li>
-							<li><a href="<?php echo base_url ('produkolahraga');?>">OLAHRAGA</a></li>
-						</ul>
-					</li>
+					<li><a href="Bersuci">Order</a></li>
+					<li><a href="Produk">Produk</a></li>
 					<li><a href="About">About</a></li>
-					<li><a href="Login">Login</a></li>
+					 <?php echo $this->session->userdata('email'); ?>
+
+					<!-- <li><a href="Login">Login</a></li> -->
+					<li><a href="Login">Logout</a></li>
 				</ul>
 			
 			</div><!--/.nav-collapse -->			

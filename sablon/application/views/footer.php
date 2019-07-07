@@ -11,7 +11,7 @@
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2019, Taufik &amp; Alex<br> 
+						Copyright &copy; 2019, AABIT<br> 
 				</div>
 			</div>
 

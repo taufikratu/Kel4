@@ -27,11 +27,11 @@ $(document).ready(function() {
         <div class="row row-content">
             <div class="col-xs-12">
                     
-                <h2 class="section-title"><span>Login</span></h2>
+                <h2 class="section-title"><span>LUPA PASSWORD</span></h2>
                 <div class="common-box-shadow"> 
                     <div class="col-xs-10 col-xs-offset-1">
                         <br>
-                        <form class="form-horizontal" action="<?php echo base_url('index.php/login/aksi_login');?>" method="post" role="form">
+                        <form class="form-horizontal" action="<?php echo base_url('index.php/Log_lp/aksi_login');?>" method="post" role="form">
                           <!--   <input type="hidden" id="checkID" name="checkID" value="N">
                             <input type="hidden" name="ip" value="115.178.254.157"> -->
                             <div class="form-group">
@@ -47,9 +47,26 @@ $(document).ready(function() {
                             </div>
                         
                             <div class="form-group">
-                                <h4 class="col-xs-3 no-gap-form">Password</h4>
+                                <label for="pertanyaan">PERTANYAAN</label>
+                               <br>
+                                <select name=pertanyaan id="pilihan">
+                                    <option value="Apa nama hewan peliharaan anda?"> Apa nama hewan peliharaan anda? </option>
+                                    <option value="Apakah warna kesukaan anda?"> apakah warna kesukaan anda? </option>
+                                    <option value="Siapakah nama ibu kandung anda?"> Siapakah nama ibu kandung anda? </option>
+                                    <option value="Apa nama buku favorit anda?"> Apa nama buku favorit anda? </option>
+                                    <option value="Siapa nama musisi favorit anda?"> Siapa nama musisi favorit anda? </option>
+                               </select>
+                            </div>
+
+                             <div class="form-group">
+                                <h4 class="col-xs-3 no-gap-form">Jawaban</h4>
                                 <div class="col-xs-7">
-                                    <input class="form-control" id="password" name="password" type="password" placeholder="Masukkan Password" empty_check="true">
+                                    <!-- <input class="form-control" id="email"  name="email" type="email"  placeholder="Masukkan Email" empty_check="true"> -->
+                                    <input class="form-control" id="jawaban"  name="jawaban" type="text"  placeholder="jawaban">
+                                    <p class="p_konfirmasi" id="idMessage"></p>
+                                </div>
+                                <div class="col-xs-2">
+                                    
                                 </div>
                             </div>
                             
@@ -66,14 +83,13 @@ $(document).ready(function() {
                             </div>
                             
                             <p class="text-center pb-10">
-                                <button type="submit" name="submit" class="btn btn-primary submit mb-4">Masuk</a></button>
+                                <button type="submit" name="submit" class="btn btn-primary submit mb-4">CARI PASSWORD</a></button>
                             </p>
+                          
                             
                                 <a href="register">
                                 <button class="text-right pb-50" class="btn btn-primary submit mb-4"></i>silahkan daftar !</a></button>
                             
-                                <a href="Log_lp">
-                                <button class="text-right pb-50"class="btn btn-primary submit mb-4">Lupa Password</a></button>
                                     <br><br>
                                 </div>
                             </div>      

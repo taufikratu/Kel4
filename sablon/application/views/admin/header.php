@@ -76,8 +76,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">AKSI:</h6>
-            <a class="collapse-item" href="listuser">List User</a>
-            <a class="collapse-item" href="utilities-border.html">Tambah User</a>
+            <a class="collapse-item" href="<?php echo base_url ('alistuser');?>">List User</a>
           </div>
         </div>
       </li>
@@ -91,8 +90,8 @@
         <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">AKSI:</h6>
-            <a class="collapse-item" href="buttons.html">List Produk</a>
-            <a class="collapse-item" href="cards.html">Tambah Produk</a>
+            <a class="collapse-item" href="<?php echo base_url ('alistbajuproduk');?>">List Produk</a>
+            <a class="collapse-item" href="<?php echo base_url ('atambahbajuproduk');?>">Tambah Produk</a>
           </div>
         </div>
       </li>
@@ -106,8 +105,8 @@
         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">AKSI:</h6>
-            <a class="collapse-item" href="buttons.html">List Baju</a>
-            <a class="collapse-item" href="cards.html">Tambah Baju</a>
+            <a class="collapse-item" href="<?php echo base_url ('alistbajupolos');?>">List Baju</a>
+            <a class="collapse-item" href="<?php echo base_url ('atambahbajupolos');?>">Tambah Baju</a>
           </div>
         </div>
       </li>
@@ -149,16 +148,6 @@
               </a>
               <!-- Dropdown - Messages -->
               <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
               </div>
             </li>
 

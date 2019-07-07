@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
 <script type="text/javascript">
 
@@ -47,87 +48,116 @@ $(document).ready(function() {
                                 </div>
                             </div>
                         
-                            <div class="form-group">
-                                <h4 class="col-xs-3 no-gap-form">Password</h4>
-                                <div class="col-xs-7">
-                                    <input class="form-control" id="password_gemscool" name="password" type="password" maxlength="12" autocomplete="off" onkeyup="checkPassLevel(this.value);" placeholder="Minimum password adalah 7 karakter kombinasi huruf dan angka" empty_check="true" min_value="6" max_value="12">
-                                </div>
-                            </div>
-                
-                            <div class="form-group">
-                                <h4 class="col-xs-3 no-gap">Ketik Ulang Password</h4>
-                                <div class="col-xs-7">
-                                    <input class="form-control" id="repassword" name="repassword" type="password" maxlength="12" placeholder="Ketik ulang password baru" empty_check="true">
-                                    <span class="secure"><img id="sec_img" src="https://img.gemscool.com/gemscool/img/icon/sec_weak.png" alt="" style="display:none;"><em id="sec_txt" style="display:none;">Weak</em></span>
-                                </div>
-                            </div>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>REGISTRASI AKUN</title>
+  
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+      
+
+        <!-- PAGE CONTENT-->
+        <div class="page-content--bgf7">
+          
+
+            <!-- WELCOME-->
+            <section class="welcome p-t-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-5">REGISTRASI
+                            </h1>
+                            <hr class="line-seprate">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END WELCOME-->
+                <?php if ($this->session->flashdata('success')): ?>
+                <div class="alert alert-success" role="alert">
+                    <?php echo $this->session->flashdata('success'); ?>
+                </div>
+                <?php endif; ?>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <a href="<?php echo site_url('Home') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+                    </div>
+                    <div class="card-body">
+
+                        <form action="<?php echo base_url('index.php/Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
+                     
                             
-                            <div class="form-group">
-                                <h4 class="col-xs-3 no-gap">Alamat Email</h4>
-                                <div class="col-xs-7 no-gap">
-                                    <div class="col-xs-12">
-                                        <input class="form-control" type="email" id="mailid" name="mailid" placeholder="Alamat Email" field_name="Email Address" empty_check="true" maxlength="100">
-                                    </div>
-                                    <div class="col-xs-6 no-gap">
-                                        <div class="col-xs-1 no-gap">
+                           <!--  <div class="form-group">
+                                <label for="nis">ID USER</label>
+                                <input class="form-control "
+                                 type="text" name="iduser" placeholder="- isi disini -" />
                                 
-                                        </div>
-                                        <div class="col-xs-11">
+                            </div> -->
+
+>>>>>>> 7264eab1eb3f030bb328af84c94f7b88fcb61396
+                            <div class="form-group">
+                                <label for="nis">EMAIL</label>
+                                <input class="form-control "
+                                 type="text" name="email" placeholder="- isi disini -" />
                                 
-                                            <input type="hidden" name="email" id="email">
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            
+
                             <div class="form-group">
-                                <h4 class="col-xs-3 no-gap">Password Hint</h4>
-                                <div class="col-xs-7">
-                                    <select class="form-control" id="hint" name="hint">
-                                        <option value="Apa nama hewan pemeliharaan anda?">Apa nama hewan pemeliharaan anda?</option>
-                                        <option value="Apakah warna kesukaan anda?">Apakah warna kesukaan anda?</option>
-                                        <option value="Siapakah nama ibu kandung anda?">Siapakah nama ibu kandung anda?</option>
-                                        <option value="Apa nama buku favorit Anda?">Apa nama buku favorit Anda?</option>
-                                        <option value="Siapa nama musisi favorit Anda?">Siapa nama musisi favorit Anda?</option>
-                                        </select>
-                                </div>
+                                <label for="nisn">PASSWORD</label>
+                                <input class="form-control "
+                                 type="password" name="password" placeholder="- isi disini -" />
+                                
                             </div>
-                            
+
                             <div class="form-group">
-                                <h4 class="col-xs-3 no-gap-form">Hint Answer</h4>
-                                <div class="col-xs-7">
-                                    <input class="form-control" type="text" id="answer" name="answer" value="" maxlength="200" placeholder="Hati-hati! Jawaban di gunakan untuk mereset akun kamu">
-                                </div>
+                                <label for="nama">NAMA</label>
+                                <textarea class="form-control"
+                                 type="text" name="nama" placeholder="- isi disini -"></textarea>
+                                
                             </div>
-                            
+
                             <div class="form-group">
-                                <h4 class="col-xs-3 no-gap-form">Telepon</h4>
-                                <div class="col-xs-7">
-                                    <input class="form-control" type="text" id="phone" name="phone" value="" maxlength="12" number_only="" placeholder="Telepon/HP">
-                                </div>
+                                <label for="jk">TELEPON</label>
+                                <textarea class="form-control"
+                                 type="number" name="telp" placeholder="- isi disini -"></textarea>
                             </div>
-                            
-                            <div class="clearfix"></div>
-                            <div class="row row-captcha">                               
-                                <div class="col-xs-7 col-xs-offset-3">
-                                    <div id="captcha_registrasi">
-                                        <script src="https://www.google.com/recaptcha/api.js"></script>
-                                        <div class="g-recaptcha" data-sitekey="6LczBU0UAAAAAInD3HgcePbu2cp1YEEPgIyxYdhm"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LczBU0UAAAAAInD3HgcePbu2cp1YEEPgIyxYdhm&amp;co=aHR0cHM6Ly93d3cuZ2Vtc2Nvb2wuY29tOjQ0Mw..&amp;hl=en&amp;v=v1557729121476&amp;size=normal&amp;cb=ua9ps9ewnqcs" width="304" height="78" role="presentation" name="a-5hqssngg8fv3" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+
                             <div class="form-group">
-                                <div class="col-xs-12 text-center">
-                                    <br>
-                                    <a href="javascript:getSubmit();" class="btn btn-md btn-primary">DAFTAR</a>
-                                    <br><br>
-                                </div>
-                            </div>      
-                        </form> 
+                                <label for="jawaban">PERTANYAAN</label>
+                               <br>
+                                <select name=pertanyaan id="pilihan">
+                                    <option value="Apa nama hewan peliharaan anda?"> Apa nama hewan peliharaan anda? </option>
+                                    <option value="Apakah warna kesukaan anda?"> apakah warna kesukaan anda? </option>
+                                    <option value="Siapakah nama ibu kandung anda?"> Siapakah nama ibu kandung anda? </option>
+                                    <option value="Apa nama buku favorit anda?"> Apa nama buku favorit anda? </option>
+                                    <option value="Siapa nama musisi favorit anda?"> Siapa nama musisi favorit anda? </option>
+                               </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="jawaban">JAWABAN</label>
+                                <textarea class="form-control"
+                                 type="text" name="jawaban" placeholder="- isi disini -"></textarea>
+                            </div>
+
+                            <button class="btn btn-success" type="submit">REGISTER</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </body>
+</html>
+
+                
+
+                                    
+
+
+

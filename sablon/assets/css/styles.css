@@ -285,6 +285,7 @@ a:hover {
 img {
   max-width: 100%;
 }
+.kanan{float:right;display:block;width:200px}
 .btn {
   font-size: 12px;
   font-size: 0.75rem;
