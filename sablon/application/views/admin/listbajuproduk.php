@@ -1,8 +1,6 @@
 <!-- DataTales Example -->
 
 <div class="card shadow mb-4">
-<?php foreach ($bajuproduk as $key)
-                  {?>
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">List Baju Produk</h6>
             </div>
@@ -23,6 +21,8 @@
                   </thead>
                   <tbody>
                     <tr>
+                    <?php foreach ($bajuproduk as $key)
+                  {?>
                       <td><?php echo $key['namabaju']?></td>
                       <td><?php echo $key['deskripsi']?></td>
                       <td><?php echo $key['tipe']?></td>
@@ -32,9 +32,9 @@
                       <td>Rp.<?php echo number_format($key['hargal'],2,',','.')?></td>
                       <td>Rp.<?php echo number_format($key['hargaxl'],2,',','.')?></td>
                     </tr>
+                    <?php }?>
                   </tbody>
                 </table>
               </div>
             </div>
-            <?php }?>
           </div>

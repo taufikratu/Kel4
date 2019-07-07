@@ -19,7 +19,7 @@
 			<li>Kami akan mengirim hasil Verivikasi via email dan SMS.</li>
 			<li>Setelah pesanan anda selesai kami akan mengkonfirmasikan via SMS.</li>
 			<li>Untuk pengambilan barang bisa datang ditempat kami.</li>
-			<li>Alamat : <strong>Jl. Diponegoro&#8211;  	Kabupaten Jember</strong> # 08231911272</li>
+			<li>Alamat : <strong>Jl. Diponegoro&#8211;  	Kabupaten Jember	</strong> </li>
 </ol>
 		</div> <!-- / section -->
 	
