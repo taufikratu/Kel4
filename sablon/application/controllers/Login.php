@@ -52,10 +52,15 @@
 					'password' => $password,
 				);
 				$this->session->set_userdata($data_session);
-				redirect('index.php/dashboard');
+				redirect('index.php/Produk');
 			}else{
 				echo "Password atau Username Salah coy";
 			}
 		}
+		
+	// 	function logout(){
+	// 		$this->session->sess_destroy();
+	// 		redirect(base_url('index.php/Home'));
+	// 	}
 	}
 ?>

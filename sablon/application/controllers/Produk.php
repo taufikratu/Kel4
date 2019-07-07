@@ -20,7 +20,7 @@ class Produk extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('header');
+		$this->load->view('headerlogout');
 		$this->load->view('produk');
 		$this->load->view('footer');
 
