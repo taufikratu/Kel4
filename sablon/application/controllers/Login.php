@@ -57,10 +57,5 @@
 				echo "Password atau Username Salah coy";
 			}
 		}
-		
-	// 	function logout(){
-	// 		$this->session->sess_destroy();
-	// 		redirect(base_url('index.php/Home'));
-	// 	}
 	}
 ?>
