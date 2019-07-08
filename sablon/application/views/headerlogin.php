@@ -30,27 +30,4 @@
 		</h1>
 	</div>
 
-	<nav class="navbar navbar-default navbar-sticky">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			</div>
-			
-			<div class="navbar-collapse collapse">
-				
-			<ul class="nav navbar-nav">
-					<li class="active"><a href="Home">Home</a></li>
-					<li><a href="Bersuci">Order</a></li>
-					<li><a href="Produk">Produk</a></li>
-					<li><a href="About">About</a></li>
-					 <?php echo $this->session->userdata('email'); ?>
-
-					<!-- <li><a href="Login">Login</a></li> -->
-					<li><a href="Login">Logout</a></li>
-				</ul>
-			
-			</div><!--/.nav-collapse -->			
-		</div>	
-	</nav>
 </header>

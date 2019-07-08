@@ -17,7 +17,13 @@ $(document).ready(function() {
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-       
+        <div class="row row-content">
+            <br>
+            <div class="col-xs-12">
+                <div class="text-center">
+            
+    </div>          </div>
+        </div>
         <div class="row row-content">
             <div class="col-xs-12">
                     
@@ -25,7 +31,7 @@ $(document).ready(function() {
                 <div class="common-box-shadow"> 
                     <div class="col-xs-10 col-xs-offset-1">
                         <br>
-                        <form class="form-horizontal" action="<?php echo base_url('index.php/login/aksi_login');?>" method="post" role="form">
+                        <form class="form-horizontal" action="<?php echo base_url('login/aksi_login');?>" method="post" role="form">
                           <!--   <input type="hidden" id="checkID" name="checkID" value="N">
                             <input type="hidden" name="ip" value="115.178.254.157"> -->
                             <div class="form-group">
@@ -58,7 +64,7 @@ $(document).ready(function() {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <br>
                             <p class="text-center pb-10">
                                 <button type="submit" name="submit" class="btn btn-primary submit mb-4">Masuk</a></button>
                             </p>

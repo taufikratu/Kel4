@@ -17,7 +17,7 @@
 		}
 		public function index()
 		{
-			$this->load->view('header');
+			$this->load->view('headerlogin');
 			$this->load->view('login');
 			$this->load->view('footer');
 
@@ -56,6 +56,11 @@
 			}else{
 				echo "Password atau Username Salah coy";
 			}
+			
 		}
+		function logout(){
+			$this->session->unset_userdata($data_session);
+			redirect("login");
+		   }
 	}
 ?>
