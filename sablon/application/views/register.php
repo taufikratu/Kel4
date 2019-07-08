@@ -10,7 +10,8 @@
             <script>get_ads_log('view', 'WEB', '9009', '189', '100');</script>
         <a href="https://www.gemscool.com/berita/read/2019/03/20/17628/news.html" onclick="get_ads_log('click', 'WEB', '9009', '189', '100')">
         </a>
-    </div>          </div>
+    </div>          
+</div>
         </div>
         <div class="row row-content">
             <div class="col-xs-12">
