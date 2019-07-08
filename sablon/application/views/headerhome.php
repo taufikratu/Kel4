@@ -26,7 +26,7 @@
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="9">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src=<?php echo base_url ("assets/images/logo.png");?> alt="">
+			<img class="img-circle" src=src=<?php echo base_url ("assets/images/aabit.jpeg");?> alt="">>
 			<span class="title">Khaira Sablon</span>
 		</h1>
 	</div>

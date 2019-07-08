@@ -1,47 +1,41 @@
-
-<body>
-
-<!-- Sidebar -->
-<aside class="col-sm-4 sidebar sidebar-right">
-
-<ul class="nav text-right nav-side">
-	<li class="active"><a href="#ui">Tentang Toko</a></li>
-	<li><a href="#frontend">Cara Order</a></li>
-</ul>
-
-</aside>
-
+<main id="main">
 
 	<div class="container">
-
 		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
 
-			<!-- Article main content -->
-			<article class="col-sm-8 maincontent">
-				<p>Kini setiap orang tentu ingin mendapatkan segala sesuatu dengan lebih mudah. Dengan berkembangnya teknologi yang semakin canggih akan memudahkan bagi siapa saja untuk mendapatkan yang sedang mereka inginkan. Salah satu contoh yang kini kerap sekali di jumpai adalah Khaira Sablon. Dimana cukup duduk santai di rumah, membuka gadget, mengetik sesuatu yang sedang diinginkan pasti akan bisa terpenuhi dengan sangat mudah sekali. Dengan berkembangnya teknologi yang semakin canggih memang akan sangat memudahkan bagi siapa saja untuk mendapatkan segala sesuatu. Akan tetapi juga harus di ketahui, dengan berkembangnya teknologi yang semakin canggih juga akan mempersulit anda sendiri.  </p>
-				<h1>Cara Order</h1>
-				<h3>1. Buka Laman Khaira Sablon</h3>
-				<h3>2. Memiliki Account</h3>
-				<p>Sebelum anda melakukan pemesanan, anda harus melakukan login terlebih dahulu </p>
-				<p><img src= <?php echo base_url('assets/images/login.jpg'); ?>></p>
-				<p> Jika anda belum memiliki username dan password untuk login, maka anda harus melakukan register atau mengisi biodata terleih dahulu agar bisa login. 
-				<p><img src= <?php echo base_url('assets/images/register.jpg'); ?>></p>
-				<p> Jika anda lupa dengan password account anda, bisa forgot password seperti gambar dibawah
-				<p><img src= <?php echo base_url('assets/images/lupa.jpg'); ?>></p>
-				<h3>3. Pemesanan</h3>
-				<p>>> Pilih kaos sesuai ukuran</p>
-				<p>>> Pilih warna</p>
-				<p>>> masukkan gambar yang diinginkan sesuai gambar dibawah</p>
-				<p><img src= <?php echo base_url('assets/images/qwe.jpg'); ?>><img src= <?php echo base_url('assets/images/eef.jpg'); ?>></p></p>
-				<p><img src= <?php echo base_url('assets/images/download.png'); ?>></p>
-				
-			</article>
-			<!-- /Article -->
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+							<span class="posted-on"><time class="entry-date published" date="2013-09-27">Jl. Diponegoro Arjasa-Jember</time></span>
+						</div>
+						<h1 class="entry-title"><a href="single.html" rel="bookmark">KHAIRA SABLON</a></h1>
+					</header>
+					<div class="entry-content">
+						<p>Kami melayani dan mengerjakan berbagai jenis kebutuhan sablon.  Dibidang apparel, kami siap melayani pembuatan kaos, jaket, dan olahraga.</p>
+						<h2>Mengapa harus kami?</h2>
+						<p style="text-align: justify;">Dijaman yang sudah modern ini, semua serba mudah dan canggih karena perkembangan alat atau device yang semakin canggih pula. Seperti smartphone, komputer, aplikasi dan perangkat lainnya yang dapat membantu mempermudah segala kebutuhan dan aktivitas kita. Seolah-olah semua sudah serba digital. Maka dari itu kami hadir mengikuti perkembangan untuk melayani kebutuhan Anda. Karena kami yakin, untuk sekarang atau masa kedepannya setiap orang pasti berhubungan dan membutuhkan dengan produk, jasa dan pelayanan kami.</p>
+					</div>
+				</article>
 
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">TIF E'2017</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a href="single.html" rel="bookmark">AABIT</a></h1>
+					</header>
+					<div class="entry-content">
+						<p><img alt="" src="assets/images/aabit.jpeg"></p>
+						<p>1. Taufikurrakhman </p>
+						<p>2. Imron Rosadi </p>
+						<p>3. Nofita Safira Anggraini </p>
+						<p>4. Arif Adi Kurniawan </p>
+						<p>5. M. Hadana Sabilal M </p>
+						 
+					</div>
+				</article><!-- #post-## -->
 
-		</div>
-	</div>	<!-- /container -->
+				</div>	<!-- /container -->
 
 </main>
-</body>
-</html>
