@@ -9,10 +9,18 @@
 <body class="animsition">
     <div class="page-wrapper">
       
-
+        <div class="container">
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
-          
+                  <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+});
+
+</script>
+    
 
             <!-- WELCOME-->
             <section class="welcome p-t-20">
@@ -105,6 +113,4 @@
 
                 
 
-                
-
-
+            
