@@ -39,7 +39,7 @@
                     </div>
                     <div class="card-body">
 
-                        <form action="<?php echo base_url('index.php/Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
+                        <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
                      
                             
                            <!--  <div class="form-group">

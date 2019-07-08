@@ -17,13 +17,7 @@ $(document).ready(function() {
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-        <div class="row row-content">
-            <br>
-            <div class="col-xs-12">
-                <div class="text-center">
-            
-    </div>          </div>
-        </div>
+       
         <div class="row row-content">
             <div class="col-xs-12">
                     
