@@ -12,27 +12,14 @@
         <div class="container">
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
-                  <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
-<script type="text/javascript">
-
-$(document).ready(function() {
-
-});
-
-</script>
-    
+          
 
             <!-- WELCOME-->
             <section class="welcome p-t-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="title-5">REGISTRASI
-                            </h1>
+                    
+                            <h1 class="title-5">REGISTRASI</h1>
                             <hr class="line-seprate">
-                        </div>
-                    </div>
-                </div>
+                    
             </section>
             <!-- END WELCOME-->
                 <?php if ($this->session->flashdata('success')): ?>
@@ -41,10 +28,7 @@ $(document).ready(function() {
                 </div>
                 <?php endif; ?>
 
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <a href="<?php echo site_url('Home') ?>"><i class="fas fa-arrow-left"></i> Back</a>
-                    </div>
+                
                     <div class="card-body">
 
                         <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
@@ -73,15 +57,15 @@ $(document).ready(function() {
 
                             <div class="form-group">
                                 <label for="nama">NAMA</label>
-                                <textarea class="form-control"
-                                 type="text" name="nama" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="text" name="nama" placeholder="- isi disini -"></input>
                                 
                             </div>
 
                             <div class="form-group">
                                 <label for="jk">TELEPON</label>
-                                <textarea class="form-control"
-                                 type="number" name="telp" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="number" name="telp" placeholder="- isi disini -"></input>
                             </div>
 
                             <div class="form-group">
@@ -98,8 +82,8 @@ $(document).ready(function() {
 
                             <div class="form-group">
                                 <label for="jawaban">JAWABAN</label>
-                                <textarea class="form-control"
-                                 type="text" name="jawaban" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="text" name="jawaban" placeholder="- isi disini -"></input>
                             </div>
 
                             <button class="btn btn-success" type="submit">REGIST</button>
