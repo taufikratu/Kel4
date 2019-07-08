@@ -14,9 +14,9 @@
             <h3>PASSWORD ANDA</h3>
             <hr>
             <div>
-                        <a href="<?php echo site_url('index.php/Home') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                        <a href="<?php echo site_url('Home') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
             </div>
-                        <form action="<?php echo base_url('index.php/Log_lp/result/')?>" action="GET">
+                        <form action="<?php echo base_url('Log_lp/result/')?>" action="GET">
                 <div class="form-group">
                     
                     <label for="cari">Password</label>
