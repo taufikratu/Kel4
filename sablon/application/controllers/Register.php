@@ -29,6 +29,7 @@
 		{ 
 			$user = $this->M_register;
 			$user->add_user();
+			$this->session->set_flashdata('Succesfully','Anda Berhasil Register!');
 			redirect('register');
 		}
 

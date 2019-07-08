@@ -15,40 +15,38 @@
         </div>
         <div class="row row-content">
             <div class="col-xs-12">
+            <?php if($responce=$this->session->flashdata('Succesfully')):?>
+            <div class="box-header">
+                <div class="col-lg-6">
+                    <div class="alert alert-success"><?php echo $responce;?></div>
+                </div>
+            </div>
+            <?php endif;?>
                 <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data">    
                 <h2 class="section-title"><span>Register</span></h2>
                 <div class="common-box-shadow"> 
                     <div class="col-xs-10 col-xs-offset-1">
                         <br>
                         <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
-                            <div class="form-group">
                                 <label for="nis">EMAIL</label>
                                 <input class="form-control "
-                                 type="text" name="email" placeholder="- isi disini -" />
+                                 type="email" name="email" placeholder="- isi disini -" required/>
                                 
-                            </div>
 
-                            <div class="form-group">
                                 <label for="nisn">PASSWORD</label>
                                 <input class="form-control "
-                                 type="password" name="password" placeholder="- isi disini -" />
+                                 type="password" name="password" placeholder="- isi disini -" required/>
                                 
-                            </div>
 
-                            <div class="form-group">
                                 <label for="nama">NAMA</label>
-                                <textarea class="form-control"
-                                 type="text" name="nama" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="text" name="nama" placeholder="- isi disini -"required>
                                 
-                            </div>
 
-                            <div class="form-group">
                                 <label for="jk">TELEPON</label>
-                                <textarea class="form-control"
-                                 type="number" name="telp" placeholder="- isi disini -"></textarea>
-                            </div>
+                                <input class="form-control"
+                                 type="number" name="telp" placeholder="- isi disini -"required>
 
-                            <div class="form-group">
                                 <label for="jawaban">PERTANYAAN</label>
                                <br>
                                 <select name=pertanyaan id="pilihan">
@@ -58,14 +56,11 @@
                                     <option value="Apa nama buku favorit anda?"> Apa nama buku favorit anda? </option>
                                     <option value="Siapa nama musisi favorit anda?"> Siapa nama musisi favorit anda? </option>
                                </select>
-                            </div>
-
-                            <div class="form-group">
+<br>
                                 <label for="jawaban">JAWABAN</label>
-                                <textarea class="form-control"
-                                 type="text" name="jawaban" placeholder="- isi disini -"></textarea>
-                            </div>
-
+                                <input class="form-control"
+                                 type="text" name="jawaban" placeholder="- isi disini -"required>
+<br>
                             <button class="btn btn-md btn-primary" type="submit">REGISTER</button>
                         </form>
                     </div>
