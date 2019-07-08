@@ -57,7 +57,12 @@
 						</ul>
 					</li>
 					<li><a href="About">About</a></li>
-					<li><a href="Login">Login</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->session->userdata('email'); ?><b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="<?php echo base_url ('Login/logout');?>">logout</a></li>
+						</ul>
+					</li>
 				</ul>
 			
 			</div><!--/.nav-collapse -->			
