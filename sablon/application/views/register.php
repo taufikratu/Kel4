@@ -37,15 +37,15 @@
 
                             <div class="form-group">
                                 <label for="nama">NAMA</label>
-                                <textarea class="form-control"
-                                 type="text" name="nama" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="text" name="nama" placeholder="- isi disini -"></input>
                                 
                             </div>
 
                             <div class="form-group">
                                 <label for="jk">TELEPON</label>
-                                <textarea class="form-control"
-                                 type="number" name="telp" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="number" name="telp" placeholder="- isi disini -"></input>
                             </div>
 
                             <div class="form-group">
@@ -62,8 +62,8 @@
 
                             <div class="form-group">
                                 <label for="jawaban">JAWABAN</label>
-                                <textarea class="form-control"
-                                 type="text" name="jawaban" placeholder="- isi disini -"></textarea>
+                                <input class="form-control"
+                                 type="text" name="jawaban" placeholder="- isi disini -"></input>
                             </div>
 
                             <button class="btn btn-md btn-primary" type="submit">REGISTER</button>
