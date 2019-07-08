@@ -1,3 +1,4 @@
+
         <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
     
 <section id="register-section">
@@ -19,7 +20,7 @@
                 <div class="common-box-shadow"> 
                     <div class="col-xs-10 col-xs-offset-1">
                         <br>
-                  
+                        <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
                             <div class="form-group">
                                 <label for="nis">EMAIL</label>
                                 <input class="form-control "
@@ -75,8 +76,4 @@
 </html>
 
                 
-
-                                    
-
-
 
