@@ -1,54 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>REGISTRASI AKUN</title>
-  
-</head>
-
-<body class="animsition">
-    <div class="page-wrapper">
-      
-
-        <!-- PAGE CONTENT-->
-        <div class="page-content--bgf7">
-          
-
-            <!-- WELCOME-->
-            <section class="welcome p-t-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="title-5">REGISTRASI
-                            </h1>
-                            <hr class="line-seprate">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END WELCOME-->
-                <?php if ($this->session->flashdata('success')): ?>
-                <div class="alert alert-success" role="alert">
-                    <?php echo $this->session->flashdata('success'); ?>
-                </div>
-                <?php endif; ?>
-
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <a href="<?php echo site_url('Home') ?>"><i class="fas fa-arrow-left"></i> Back</a>
-                    </div>
-                    <div class="card-body">
-
-                        <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data" >
-                     
-                            
-                           <!--  <div class="form-group">
-                                <label for="nis">ID USER</label>
-                                <input class="form-control "
-                                 type="text" name="iduser" placeholder="- isi disini -" />
-                                
-                            </div> -->
-
+        <link rel="stylesheet" href="https://www.gemscool.com/assets/css/min.css.php?css=account&amp;v=2019052215">     
+    
+<section id="register-section">
+    <div class="container">
+        <div class="row row-content">
+            <br>
+            <div class="col-xs-12">
+            <div class="text-center">
+            <script>get_ads_log('view', 'WEB', '9009', '189', '100');</script>
+        <a href="https://www.gemscool.com/berita/read/2019/03/20/17628/news.html" onclick="get_ads_log('click', 'WEB', '9009', '189', '100')">
+        </a>
+            </div>          
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <form action="<?php echo base_url('Register/tambah_user') ?>" method="post" enctype="multipart/form-data">    
+                <h2 class="section-title"><span>Register</span></h2>
+                <div class="common-box-shadow"> 
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <br>
+                  
                             <div class="form-group">
                                 <label for="nis">EMAIL</label>
                                 <input class="form-control "
@@ -94,7 +65,7 @@
                                  type="text" name="jawaban" placeholder="- isi disini -"></textarea>
                             </div>
 
-                            <button class="btn btn-success" type="submit">REGIST</button>
+                            <button class="btn btn-md btn-primary" type="submit">REGISTER</button>
                         </form>
                     </div>
                 </div>
@@ -105,6 +76,7 @@
 
                 
 
-                
+                                    
+
 
 
