@@ -40,7 +40,7 @@
 			<div class="navbar-collapse collapse">
 				
 			<ul class="nav navbar-nav">
-					<li class="active"><a href="Home">Home</a></li>
+					<li class="active"><a href="<?php echo base_url ('home');?>">Home</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Order <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -56,7 +56,7 @@
 							<li><a href="<?php echo base_url ('produkolahraga');?>">OLAHRAGA</a></li>
 						</ul>
 					</li>
-					<li><a href="About">About</a></li>
+					<li><a href="<?php echo base_url ('about');?>">About</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->session->userdata('email'); ?><b class="caret"></b></a>
 						<ul class="dropdown-menu">

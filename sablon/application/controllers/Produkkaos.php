@@ -11,5 +11,20 @@ class Produkkaos extends CI_Controller {
 		$this->load->view('footer');
 
 	}
+	public function detail(){
+		$data=array(
+			'namabaju'=>$namabaju,
+			'deskripsi'=>$deskripsi,
+			'tipe'=>$tipe,
+			'gambar'=>$gambar,
+			'hargas'=>$hargas,
+			'hargam'=>$hargam,
+			'hargal'=>$hargal,
+			'hargaxl'=>$hargaxl,);		
+		$data['tmp']=$this->db->select('*');
+    				$this->db->where('id',$this->uri->segment(3))->row();
+	 return $this->db->get('bajuproduk');
+	 $this->template->load('produkdetail');
+	}
 }
 ?>

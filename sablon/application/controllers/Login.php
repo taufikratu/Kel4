@@ -59,7 +59,7 @@
 			
 		}
 		function logout(){
-			$this->session->unset_userdata($data_session);
+			$this->session->sess_destroy($data_session);
 			redirect("login");
 		   }
 	}
